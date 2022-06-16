@@ -1,6 +1,7 @@
 const fizzBuzzWrapper = document.getElementById('wrapper-fizz-buzz');
 let valueNumber;
 for (let i = 1; i <=100; i++){
+    
 
     if( i % 3 == 0 &&  i % 5 == 0 ){
         console.log('FizzBuzz');
@@ -17,11 +18,11 @@ for (let i = 1; i <=100; i++){
         
     else{
         console.log(i);
-        valueNumber=i
+        valueNumber=i;
     }
     
     const casella = document.createElement('div');
-    casella.classList.add('col-2');
+    casella.classList.add('col-3', 'stile', 'bg-warning', 'm-4', 'text-center');
     casella.innerHTML=(valueNumber);
     fizzBuzzWrapper.append(casella);
 }
